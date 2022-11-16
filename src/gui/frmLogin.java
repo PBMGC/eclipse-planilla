@@ -65,7 +65,7 @@ public class frmLogin extends JFrame {
 
 	public frmLogin() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(0, 0, 400, 300);
+		setBounds(0, 0, 400, 301);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		contentPane.setLayout(new BorderLayout(0, 0));
@@ -202,7 +202,7 @@ public class frmLogin extends JFrame {
 	}
 
 	protected void imgCerrar_Clicked() {
-		if ( JOptionPane.showConfirmDialog(this, "¿ Desea salir de la app ?", "Salir", JOptionPane.YES_NO_OPTION ) == JOptionPane.YES_OPTION )
+		if ( JOptionPane.showConfirmDialog(this, "ï¿½ Desea salir de la app ?", "Salir", JOptionPane.YES_NO_OPTION ) == JOptionPane.YES_OPTION )
 			System.exit(0);		
 	}
 	
@@ -211,7 +211,7 @@ public class frmLogin extends JFrame {
 		empleado.setPassword( new String( txtPassword.getPassword() ) );
 		daoEmpleado.Login(empleado);
 		
-		JOptionPane.showMessageDialog(this, empleado.isValido() ? "Usuario : " + empleado.getNombres() : "Usuario y/o contraseña inválido" );
+		JOptionPane.showMessageDialog(this, empleado.isValido() ? "Usuario : " + empleado.getNombres() : "Usuario y/o contraseï¿½a invï¿½lido" );
 	}
 	
 }
